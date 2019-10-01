@@ -1,0 +1,339 @@
+/* default.vue component */
+html {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .button--green {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #3b8070;
+    color: #3b8070;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+  
+  .logo {
+    background-color: #504A76;
+    height:10vh; 
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button--green:hover {
+    color: #fff;
+    background-color: #3b8070;
+  }
+  
+  .button--grey {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #35495e;
+    color: #35495e;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-left: 15px;
+  }
+  
+  .button--grey:hover {
+    color: #fff;
+    background-color: #35495e;
+  }
+  
+  .tabItem {
+    height:10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #B2B2B2;
+  }
+  
+  .active .tabItem {
+    color: #5870C6;
+  }
+  
+  .navbar {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+    background-color: #e4e9ed;
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*endnodeCard.vue component*/
+  .main {
+    background-color: #D7DEEA;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+}
+
+.card-head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.card-title {
+    color: #4B5B85;
+    margin: 10px 0px 0px 10px;
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.card-divider {
+    background-color: #475071;
+    width: 95%;
+    height: 3px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.endnode-content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.endnode-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color:#4B5B85;
+}
+
+.endnode-text span {
+    padding-top: 5%;
+}
+
+.status {
+    color: #35AD33;
+    font-family: Rasa;
+    font-weight: bold;
+}
+
+.button-action button {
+    background-color: #4B5B85;
+    font-family: Rasa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: white;
+    width: 280px;
+    height: 65px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.button-action button:hover {
+    width: 300px;
+    height: 70px;
+    font-size: 50px;
+}
+
+.endnode-data {
+    height: 40%;
+}
+
+.endnode-description {
+    height: 40%;
+}
+
+/* demo.vue page */
+.demo-content {
+    height: 70vh; 
+    display: flex;
+    flex-direction: row;
+}
+
+.demo {
+    width: 45vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-introduction {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-title {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #475071;
+}
+
+.introduction-body {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #475071;
+    width: 75%;
+}
+
+.divider {
+    background-color: #475071;
+    width: 55%;
+    height: 3px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.demo-slide {
+    height: 30vh;
+    background-color: #9FA9D0;
+}
+
+/* indev.vue page */
+.container {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+  }
+  
+  .upper-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+  }
+  
+  .bottom {
+    background-color: #9FA9D0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-family: 'Rasa';
+    color: #4B5B85;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 88px;
+    margin-bottom: 100px;
+  }
+  
+  .subtitle {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #475071;
+    padding: 30px 10vw 30px 10vw;
+  }
+  
+  .description {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    color: #475071;
+    padding: 0px 20vw 20px 20vw;
+    text-align: center;
+  }
+  
+  .links {
+    padding-top: 15px;
+  }
+  
+  .col-information {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .col-item {
+    padding: 3%;
+  }
+  
+  .item-title {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .item-text {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: left;
+  }
+  
+ 

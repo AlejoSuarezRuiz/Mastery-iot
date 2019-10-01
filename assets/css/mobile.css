@@ -1,0 +1,106 @@
+@media(max-width: 798px){
+
+
+/* Element | https://mastery-iot.netlify.com/ */
+
+#__layout > div:nth-child(1) {
+    display: block !important;
+  }
+  
+  /* Inline #0 | https://mastery-iot.netlify.com/ */
+  
+  .navbar {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  
+  .upper-container {
+    flex-direction: column;
+    margin-top: 4vh;
+  }
+  
+  .content-header {
+    /* width: 50vw; */
+    width: auto;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 20px 40px;
+  }
+  
+  .image {
+    /* width: 40vw; */
+    width: auto
+  }
+  
+  .description {
+    /* font-size: 28px; */
+    /* line-height: 34px; */
+    /* padding: 0 20vw 20px; */
+    font-size: 20px;
+    line-height: 25px;
+    padding: 15px;
+  }
+  
+  .col-information {
+    /* flex-direction: row; */
+    flex-direction: column;
+  }
+  
+  .item-title {
+    /* font-size: 36px; */
+    /* line-height: 44px; */
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  
+  .item-text {
+    /* font-size: 22px; */
+    /* line-height: 26px; */
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .button-action {
+    /* height: 20vh; */
+    height: 17vh;
+  }
+  
+  .button {
+    /* width: 20vw; */
+    width: 70% !important;
+  }
+  
+  /* Inline #4 | https://mastery-iot.netlify.com/ */
+  
+  nav {
+    display: none;
+  }
+  
+  /* Element | https://mastery-iot.netlify.com/ */
+  
+  #__layout > div:nth-child(1) > div:nth-child(2) {
+    width: auto !important;
+  }
+  
+  /* Element | https://mastery-iot.netlify.com/ */
+  
+  .top {
+    height: auto !important;
+  }
+  .bottom {
+    height: auto !important;
+  }
+  .image img {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+
+}
