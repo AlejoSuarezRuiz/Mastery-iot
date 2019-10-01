@@ -1,7 +1,7 @@
 <template>
-  <div id="Navbar" style="display: flex">
-    <div style="background-color: #e4e9ed; width:5vw">
-      <div style="background-color: #504A76; height:10vh; color:white">
+  <div style="display: flex">
+    <div class="navbar">
+      <div class="logo">
         <img src="~assets/img/logo.png" alt="Logo" width="50" height="50">
       </div>
       <nuxt-link to="/" exact-active-class="active">
@@ -55,6 +55,15 @@ html {
   padding: 10px 30px;
 }
 
+.logo {
+  background-color: #504A76;
+  height:10vh; 
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button--green:hover {
   color: #fff;
   background-color: #3b8070;
@@ -80,14 +89,25 @@ html {
   display:flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Rasa';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #B2B2B2;
 }
 
-.active {
+.active .tabItem {
   color: #5870C6;
 }
 
-#Navbar {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+.navbar {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  background-color: #e4e9ed;
+  width: 5vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>
 
