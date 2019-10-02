@@ -24,7 +24,8 @@ export default {
   */
   css: [
     '@/assets/css/style.css',
-    '@/assets/css/mobile.css'
+    '@/assets/css/mobile.css',
+    '@/assets/css/icons.css'
   ],
   /*
   ** Plugins to load before mounting the App
