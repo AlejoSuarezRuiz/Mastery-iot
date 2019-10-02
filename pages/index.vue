@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="top" style="height: 52vh">
+    <div class="top" >
       <div class="upper-container">
         <div class="content-header">
           <div class="title">My DAQ</div>
@@ -16,7 +16,7 @@
         Con el sistema de adquisición de datos <b>MyDAQ</b> puedes hacer crecer tu negocio, teniendo automatizaciones parciales o totales dependiendo de tus necesidades, y lo mejor, tener la información de tu negocio en tiempo real a solo un click.
       </div>
     </div>
-    <div class="bottom" style="height: 40vh">
+    <div class="bottom" >
       <div class="col-information">
         <div class="col-item">
           <div class="item-title">
@@ -58,7 +58,7 @@
 
 
 <style>
- .button-action {
+  .button-action {
     display: flex;
     justify-content: center;
     padding: 2vh;
@@ -70,7 +70,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     width: 20vw;
-    height: 8vh;
+    height:initial;
     border: none;
   }
   
