@@ -414,3 +414,65 @@ html {
   height: initial;
 }
 
+/* layout */
+
+/* Inline #0 | https://mastery-iot.netlify.com/ */
+
+.tabItem {
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    /* min-height: 3.25rem; */
+  }
+}
+
+.upper-container {
+  /* margin-top: 8vh; */
+  padding-top: 8vh;
+}
+
+/* Inline #2 | https://mastery-iot.netlify.com/ */
+
+.tabItem {
+  padding: 5px 10px;
+}
+
+body {
+}
+
+/* Element | https://mastery-iot.netlify.com/ */
+
+#__layout > div:nth-child(1) {
+  min-height: 100vh;
+}
+
+/* Element | https://mastery-iot.netlify.com/ */
+
+/* #__layout > div:nth-child(1) > div:nth-child(2) > main:nth-child(1) { */
+#__layout > div:nth-child(1) > main:nth-child(2) {
+  min-height: 100%;
+}
+
+/* Inline #8 | http://localhost:3000/demo */
+
+main {
+  height: 100%;
+}
+
+/* Inline #3 | http://localhost:3000/demo */
+
+.demo-slide {
+  /* height: 30vh; */
+  min-height: 35%;
+}
+.active .tabItem {
+  color: #5870C6;
+  border-right: 5px #5870C6 solid;
+}
+.logo {
+  min-height: 5rem;
+  min-width: 5rem;
+}
