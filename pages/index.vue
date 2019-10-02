@@ -20,7 +20,7 @@
       <div class="col-information">
         <div class="col-item">
           <div class="item-title">
-            <div class="icon"></div>
+            <div class="icon icon-ear"></div>
             <b>Entrada analógicas</b>
           </div>
           <div class="item-text">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-item">
           <div class="item-title">
-            <div class="icon"></div>
+            <div class="icon icon-hammer"></div>
             <b>Salidas analógicas</b>
           </div>
           <div class="item-text">
@@ -38,7 +38,7 @@
         </div>
         <div class="col-item">
           <div class="item-title">
-            <div class="icon"></div>
+            <div class="icon icon-wifi"></div>
             <b>Conectividad</b>
           </div>
           <div class="item-text">

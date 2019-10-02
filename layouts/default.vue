@@ -4,19 +4,22 @@
       <div class="logo">
         <img src="~assets/img/logo.png" alt="Logo" width="50" height="50">
       </div>
-      <nav>
+      <nav class="navigation">
         <nuxt-link to="/" exact-active-class="active">
           <div class="tabItem">
-            Inicio
+          <i class="icon icon-home"></i>
+            Home
           </div>
         </nuxt-link>
-        <nuxt-link to="/demo">
+        <nuxt-link to="/demo" exact-active-class="active">
           <div class="tabItem">
-            demo
+          <i class="icon icon-pointer"></i>
+          demo
           </div>  
         </nuxt-link>
-        <nuxt-link to="/data">
+        <nuxt-link to="/data" exact-active-class="active">
           <div class="tabItem" >
+          <i class="icon icon-data"></i>
             Data
           </div>
         </nuxt-link>
