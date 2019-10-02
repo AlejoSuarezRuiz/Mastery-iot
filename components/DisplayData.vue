@@ -2,7 +2,7 @@
     <div>
         <div id="chart">
             <!-- <apexchart type=radialBar height=350 :options="chartOptions" :series="series" /> -->
-            <DoughnutChart :percent="25" />
+            <DoughnutChart :percent="measure" />
         </div>
         <div class="num-data">
             <slot></slot>
@@ -20,6 +20,13 @@
     export default {
         components: {
             DoughnutChart
-        }
+        },
+        methods: {
+
+        },
+        mounted: function () {
+            console.log(this.measure)      
+        },
+        props:['measure']
     }
 </script>

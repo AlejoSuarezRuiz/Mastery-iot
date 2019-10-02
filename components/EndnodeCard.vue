@@ -6,17 +6,18 @@
         </div>
         <div class="endnode-content">
             <div class="endnode-data">
-                <display-data>
-                    {{ mesaure }}
+                <display-data :measure="measure">
+                    {{ measure }}
                 </display-data>
             </div>
             <div class="endnode-description">
                 <div class="endnode-text">
-                    <span style="display: flex;"><p style="width: 70%">Estado de conexión: <strong class="status">{{ conectionStatus }}</strong> </p> </span>
+                    <span style="display: flex;">Estado de conexión: <strong class="status">{{ conectionStatus }}</strong> </span>
                     <span>El limite configurado para la balanza es de {{ maxWeight }} Kg.</span>
                 </div>
-                <div class="button-action">
-                    <button>Guardar</button>
+                <div class="button-action" style="height: auto">
+                    <!-- <button v-on:click="changeData">Guardar</button> -->
+                    <button v-on:click="connectWS"> Connect </button>
                 </div>
             </div>
         </div>
@@ -37,10 +38,31 @@ export default {
     data(){
         return{
             type:'Medición',
-            conectionStatus:'Estable',
-            maxWeight:50
+            conectionStatus:'Esperando',
+            maxWeight:50,
+            measure:0
         }
     },
-    props:['mesaure']
+    methods: {
+        changeData: function() {
+            this.measure += 1;
+        },
+        connectWS: function() {
+            try{
+                this.conectionStatus = "Estable";
+                const sock_recv = new WebSocket('ws://0.0.0.0:5000/get_data')
+                console.log("Connected!");
+                console.log(sock_recv);
+                sock_recv.addEventListener("message", function(event) {
+                    //console.log(event.data); 
+                    //console.log(parseInt(event.data)); 
+                    this.measure = parseFloat(event.data)*100/33000;
+                }.bind(this));
+                console.log("listener added!!");
+            } catch {
+                console.log("Failed to establish connection!! D:")
+            }
+        }
+    }
 }
 </script>

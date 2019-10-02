@@ -2,7 +2,10 @@
   <div style="display: flex">
     <div class="navbar">
       <div class="logo">
-        <img src="~assets/img/logo.png" alt="Logo" width="50" height="50">
+        <!-- <img src="~assets/img/logo.png" alt="Logo" width="50" height="50"> -->
+        <nuxt-link to="/">
+          <img src="~assets/img/icons/artificial-intelligence.svg" alt="Logo" width="50" height="50">
+        </nuxt-link>
       </div>
       <nav class="navigation">
         <nuxt-link to="/" exact-active-class="active">

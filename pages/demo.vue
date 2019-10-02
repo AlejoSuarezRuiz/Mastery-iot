@@ -1,8 +1,8 @@
 <template>
 	<main>
-		<div class="demo-content">
+		<div class="demo-content" style="height: 100%;">
 			<div class="demo">
-				<endnode-card :mesaure="mesaure" />
+				<endnode-card />
 			</div>
 			<div class="demo-introduction">
 				<div class="introduction-title">
@@ -14,8 +14,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="demo-slide">
-		</div>
+		<!-- <div class="demo-slide">
+		</div> -->
 	</main>
 </template>
 
@@ -28,7 +28,7 @@ import EndnodeCard from '@/components/EndnodeCard.vue'
 export default {
 	data(){
 		return {
-			mesaure: 25.8
+			measure: 50
 		};
 	},
 	components:{
