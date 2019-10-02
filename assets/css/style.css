@@ -29,7 +29,7 @@ html {
   
   .logo {
     background-color: #504A76;
-    height:10vh; 
+    /* height:10vh;  */
     color:white;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ html {
   }
   
   .tabItem {
-    height:10vh;
+    /* height:10vh; */
     display:flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +77,7 @@ html {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
     background-color: #e4e9ed;
     width: 5vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
   }
@@ -91,7 +91,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .card-head {
@@ -100,7 +100,7 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    /* height: 20%; */
 }
 
 .card-title {
@@ -126,7 +126,7 @@ html {
 }
 
 .endnode-content {
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     flex-direction: column;
 }
@@ -185,7 +185,7 @@ html {
 
 /* demo.vue page */
 .demo-content {
-    height: 70vh; 
+    /* height: 70vh;  */
     display: flex;
     flex-direction: row;
 }
@@ -239,7 +239,7 @@ html {
     background-color: #9FA9D0;
 }
 
-/* indev.vue page */
+/* index.vue page */
 .container {
     margin: 0 auto;
     min-height: 100vh;
@@ -335,5 +335,82 @@ html {
     line-height: 26px;
     text-align: left;
   }
-  
+
  
+  
+ /* demo page*/
+
+
+/* En línea #3 | http://localhost:3000/demo */
+
+.demo-content {
+  /* height: 70vh; */
+  height: auto;
+  padding: 1rem;
+}
+
+.endnode-data {
+  /* height: 40%; */
+  height: auto;
+  position: relative;
+}
+
+.endnode-description {
+  /* height: 40%; */
+  height: auto;
+}
+
+.endnode-content {
+  /* height: 80%; */
+  height: auto;
+}
+
+/* En línea #6 | http://localhost:3000/demo */
+
+#chart {
+  text-align: center;
+}
+
+.num-data {
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  font-size: 2.3rem;
+}
+
+/* Elemento | http://localhost:3000/demo */
+
+.endnode-text > span:nth-child(1) > p:nth-child(1) {
+  /* width: 70%; */
+  height: auto;
+}
+
+
+/* Elemento | http://localhost:3000/demo */
+
+.endnode-text > span:nth-child(1) > p:nth-child(1) {
+  width: auto;
+  font-size: large;
+}
+
+/* En línea #6 | http://localhost:3000/demo */
+
+.button-action {
+  text-align: center;
+  padding: 1rem;
+}
+.main {
+  height: initial;
+}
+
+/* En línea #3 | http://localhost:3000/demo */
+
+.navbar {
+  height: initial;
+  width: auto;
+}
+
+.logo {
+  height: initial;
+}
+

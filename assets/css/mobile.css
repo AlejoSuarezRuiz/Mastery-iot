@@ -102,5 +102,59 @@
     width: 100%;
     margin: auto;
   }
+  .button-text {
+    font-size: 1.5rem !important; 
+ }
+
+ /* demo page*/
+
+/* En línea #6 | http://localhost:3000/demo */
+
+.demo-content {
+  flex-direction: column;
+}
+
+/* En línea #3 | http://localhost:3000/demo */
+
+.demo {
+  width: auto;
+}
+
+.demo-introduction {
+  width: auto;
+}
+
+
+/* En línea #6 | http://localhost:3000/demo */
+
+.introduction-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.introduction-body {
+  font-size: 1rem;
+  line-height: initial;
+}
+
+.introduction-title {
+  line-height: initial;
+}
+
+/* En línea #3 | http://localhost:3000/demo */
+
+.divider {
+  /* width: 55%; */
+  width: 70%;
+}
+
+/* En línea #4 | http://localhost:3000/demo */
+
+
+.demo-introduction {
+  padding: 1rem;
+}
+
+
 
 }

@@ -12,7 +12,7 @@
             </div>
             <div class="endnode-description">
                 <div class="endnode-text">
-                    <span style="display: flex;"><p style="width: 70%">Estado de conexión: </p> <p class="status">{{ conectionStatus }}</p> </span>
+                    <span style="display: flex;"><p style="width: 70%">Estado de conexión: <strong class="status">{{ conectionStatus }}</strong> </p> </span>
                     <span>El limite configurado para la balanza es de {{ maxWeight }} Kg.</span>
                 </div>
                 <div class="button-action">
