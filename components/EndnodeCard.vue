@@ -50,7 +50,7 @@ export default {
         connectWS: function() {
             try{
                 this.conectionStatus = "Estable";
-                const sock_recv = new WebSocket('ws://0.0.0.0:5000/get_data')
+                const sock_recv = new WebSocket('ws://68.183.149.80:5000/get_data')
                 console.log("Connected!");
                 console.log(sock_recv);
                 sock_recv.addEventListener("message", function(event) {
