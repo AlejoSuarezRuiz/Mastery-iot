@@ -56,7 +56,7 @@ export default {
                 sock_recv.addEventListener("message", function(event) {
                     //console.log(event.data); 
                     //console.log(parseInt(event.data)); 
-                    this.measure = parseFloat(event.data)*100/33000;
+                    this.measure = parseInt(parseFloat(event.data)*100/33000);
                 }.bind(this));
                 console.log("listener added!!");
             } catch {
